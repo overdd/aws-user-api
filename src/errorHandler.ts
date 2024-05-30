@@ -3,7 +3,12 @@ import { ValidateError } from "tsoa";
 import { ApiError } from "./api/ApiError";
 import { AuthError } from "./api/auth/middleware";
 
-export function errorHandler(err: unknown, req: Request, res: Response, next: NextFunction): Response | void {
+export function errorHandler(
+  err: unknown,
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Response | void {
   if (err instanceof ValidateError) {
     console.warn(`Caught Validation Error for ${req.path}:`, err.fields);
     return res.status(422).json({

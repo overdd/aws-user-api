@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1716996277451" clover="3.2.0">
+  <project timestamp="1716996277452" name="All files">
+    <metrics statements="368" coveredstatements="281" conditionals="96" coveredconditionals="55" methods="68" coveredmethods="48" elements="532" coveredelements="384" complexity="0" loc="368" ncloc="368" packages="9" files="21" classes="21"/>
+    <package name="build">
+      <metrics statements="166" coveredstatements="109" conditionals="66" coveredconditionals="33" methods="23" coveredmethods="16"/>
+      <file name="routes.ts" path="C:\Users\user\source\aws-users-api\build\routes.ts">
+        <metrics statements="166" coveredstatements="109" conditionals="66" coveredconditionals="33" methods="23" coveredmethods="16"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="136" count="1" type="stmt"/>
+        <line num="140" count="1" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="151" count="0" type="stmt"/>
+        <line num="157" count="0" type="stmt"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="161" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="164" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="165" count="0" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="170" count="0" type="stmt"/>
+        <line num="172" count="0" type="stmt"/>
+        <line num="176" count="1" type="stmt"/>
+        <line num="182" count="0" type="stmt"/>
+        <line num="188" count="0" type="stmt"/>
+        <line num="189" count="0" type="stmt"/>
+        <line num="190" count="0" type="stmt"/>
+        <line num="192" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="194" count="0" type="stmt"/>
+        <line num="195" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="196" count="0" type="stmt"/>
+        <line num="200" count="0" type="stmt"/>
+        <line num="201" count="0" type="stmt"/>
+        <line num="203" count="0" type="stmt"/>
+        <line num="207" count="1" type="stmt"/>
+        <line num="212" count="0" type="stmt"/>
+        <line num="218" count="0" type="stmt"/>
+        <line num="219" count="0" type="stmt"/>
+        <line num="220" count="0" type="stmt"/>
+        <line num="222" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="224" count="0" type="stmt"/>
+        <line num="225" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="226" count="0" type="stmt"/>
+        <line num="230" count="0" type="stmt"/>
+        <line num="231" count="0" type="stmt"/>
+        <line num="233" count="0" type="stmt"/>
+        <line num="237" count="1" type="stmt"/>
+        <line num="243" count="3" type="stmt"/>
+        <line num="249" count="3" type="stmt"/>
+        <line num="250" count="3" type="stmt"/>
+        <line num="251" count="3" type="stmt"/>
+        <line num="253" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="255" count="3" type="stmt"/>
+        <line num="256" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="257" count="3" type="stmt"/>
+        <line num="261" count="3" type="stmt"/>
+        <line num="262" count="3" type="stmt"/>
+        <line num="264" count="0" type="stmt"/>
+        <line num="268" count="1" type="stmt"/>
+        <line num="274" count="2" type="stmt"/>
+        <line num="280" count="2" type="stmt"/>
+        <line num="281" count="2" type="stmt"/>
+        <line num="282" count="2" type="stmt"/>
+        <line num="284" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="286" count="1" type="stmt"/>
+        <line num="287" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="288" count="1" type="stmt"/>
+        <line num="292" count="1" type="stmt"/>
+        <line num="293" count="1" type="stmt"/>
+        <line num="295" count="1" type="stmt"/>
+        <line num="299" count="1" type="stmt"/>
+        <line num="305" count="1" type="stmt"/>
+        <line num="312" count="1" type="stmt"/>
+        <line num="313" count="1" type="stmt"/>
+        <line num="314" count="1" type="stmt"/>
+        <line num="316" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="318" count="1" type="stmt"/>
+        <line num="319" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="320" count="1" type="stmt"/>
+        <line num="324" count="1" type="stmt"/>
+        <line num="325" count="1" type="stmt"/>
+        <line num="327" count="0" type="stmt"/>
+        <line num="331" count="1" type="stmt"/>
+        <line num="337" count="2" type="stmt"/>
+        <line num="343" count="2" type="stmt"/>
+        <line num="344" count="2" type="stmt"/>
+        <line num="345" count="2" type="stmt"/>
+        <line num="347" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="349" count="2" type="stmt"/>
+        <line num="350" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="351" count="2" type="stmt"/>
+        <line num="355" count="2" type="stmt"/>
+        <line num="356" count="2" type="stmt"/>
+        <line num="358" count="0" type="stmt"/>
+        <line num="362" count="1" type="stmt"/>
+        <line num="368" count="1" type="stmt"/>
+        <line num="373" count="1" type="stmt"/>
+        <line num="374" count="1" type="stmt"/>
+        <line num="375" count="1" type="stmt"/>
+        <line num="377" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="379" count="1" type="stmt"/>
+        <line num="380" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="381" count="1" type="stmt"/>
+        <line num="385" count="1" type="stmt"/>
+        <line num="386" count="1" type="stmt"/>
+        <line num="388" count="0" type="stmt"/>
+        <line num="399" count="7" type="stmt"/>
+        <line num="406" count="14" type="stmt"/>
+        <line num="407" count="14" type="stmt"/>
+        <line num="408" count="5" type="stmt"/>
+        <line num="409" count="5" type="stmt"/>
+        <line num="412" count="14" type="stmt"/>
+        <line num="413" count="14" type="stmt"/>
+        <line num="414" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="415" count="0" type="stmt"/>
+        <line num="417" count="0" type="stmt"/>
+        <line num="418" count="0" type="stmt"/>
+        <line num="426" count="0" type="stmt"/>
+        <line num="427" count="0" type="stmt"/>
+        <line num="429" count="14" type="stmt"/>
+        <line num="430" count="14" type="stmt"/>
+        <line num="440" count="14" type="stmt"/>
+        <line num="441" count="14" type="stmt"/>
+        <line num="442" count="9" type="stmt"/>
+        <line num="446" count="5" type="stmt"/>
+        <line num="447" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="448" count="5" type="stmt"/>
+        <line num="458" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="462" count="8" type="stmt"/>
+        <line num="464" count="5" type="stmt"/>
+        <line num="466" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="467" count="5" type="stmt"/>
+        <line num="468" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="473" count="5" type="stmt"/>
+        <line num="475" count="3" type="stmt"/>
+        <line num="481" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="482" count="0" type="stmt"/>
+        <line num="484" count="5" type="stmt"/>
+        <line num="485" count="0" type="stmt"/>
+        <line num="487" count="5" type="cond" truecount="3" falsecount="3"/>
+        <line num="488" count="0" type="stmt"/>
+        <line num="489" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="490" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="492" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="499" count="0" type="stmt"/>
+        <line num="500" count="0" type="stmt"/>
+        <line num="507" count="9" type="stmt"/>
+        <line num="508" count="9" type="stmt"/>
+        <line num="509" count="9" type="stmt"/>
+        <line num="510" count="9" type="cond" truecount="2" falsecount="6"/>
+        <line num="512" count="0" type="stmt"/>
+        <line num="514" count="0" type="stmt"/>
+        <line num="516" count="6" type="stmt"/>
+        <line num="518" count="0" type="stmt"/>
+        <line num="520" count="3" type="stmt"/>
+        <line num="522" count="0" type="stmt"/>
+        <line num="524" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="525" count="0" type="stmt"/>
+        <line num="526" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="527" count="0" type="stmt"/>
+        <line num="529" count="0" type="stmt"/>
+        <line num="532" count="0" type="stmt"/>
+        <line num="536" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="537" count="1" type="stmt"/>
+        <line num="539" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="config">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="constants.ts" path="C:\Users\user\source\aws-users-api\config\constants.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src">
+      <metrics statements="45" coveredstatements="37" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="2"/>
+      <file name="app.ts" path="C:\Users\user\source\aws-users-api\src\app.ts">
+        <metrics statements="14" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+      <file name="errorHandler.ts" path="C:\Users\user\source\aws-users-api\src\errorHandler.ts">
+        <metrics statements="17" coveredstatements="13" conditionals="8" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="12" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="20" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="25" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+      </file>
+      <file name="ioc.ts" path="C:\Users\user\source\aws-users-api\src\ioc.ts">
+        <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.api">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="ApiError.ts" path="C:\Users\user\source\aws-users-api\src\api\ApiError.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.api.articles">
+      <metrics statements="32" coveredstatements="19" conditionals="1" coveredconditionals="0" methods="9" coveredmethods="3"/>
+      <file name="ArticleController.ts" path="C:\Users\user\source\aws-users-api\src\api\articles\ArticleController.ts">
+        <metrics statements="14" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+      </file>
+      <file name="ArticlesRepositoryInMemory.ts" path="C:\Users\user\source\aws-users-api\src\api\articles\ArticlesRepositoryInMemory.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+      </file>
+      <file name="ArticlesService.ts" path="C:\Users\user\source\aws-users-api\src\api\articles\ArticlesService.ts">
+        <metrics statements="11" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.api.auth">
+      <metrics statements="37" coveredstatements="29" conditionals="8" coveredconditionals="7" methods="9" coveredmethods="6"/>
+      <file name="AuthController.ts" path="C:\Users\user\source\aws-users-api\src\api\auth\AuthController.ts">
+        <metrics statements="9" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="AuthService.ts" path="C:\Users\user\source\aws-users-api\src\api\auth\AuthService.ts">
+        <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="middleware.ts" path="C:\Users\user\source\aws-users-api\src\api\auth\middleware.ts">
+        <metrics statements="19" coveredstatements="17" conditionals="8" coveredconditionals="7" methods="6" coveredmethods="6"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="29" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="14" type="stmt"/>
+        <line num="33" count="14" type="cond" truecount="3" falsecount="0"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="36" count="9" type="stmt"/>
+        <line num="37" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="9" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="53" count="14" type="stmt"/>
+      </file>
+      <file name="securities.ts" path="C:\Users\user\source\aws-users-api\src\api\auth\securities.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.api.users">
+      <metrics statements="64" coveredstatements="63" conditionals="12" coveredconditionals="9" methods="14" coveredmethods="14"/>
+      <file name="UserController.ts" path="C:\Users\user\source\aws-users-api\src\api\users\UserController.ts">
+        <metrics statements="26" coveredstatements="25" conditionals="3" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="79" count="2" type="stmt"/>
+        <line num="80" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+      </file>
+      <file name="UsersController.ts" path="C:\Users\user\source\aws-users-api\src\api\users\UsersController.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+      <file name="UsersRepositoryDynamoDB.ts" path="C:\Users\user\source\aws-users-api\src\api\users\UsersRepositoryDynamoDB.ts">
+        <metrics statements="28" coveredstatements="28" conditionals="9" coveredconditionals="7" methods="7" coveredmethods="7"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="33" count="17" type="stmt"/>
+        <line num="39" count="17" type="stmt"/>
+        <line num="40" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="41" count="9" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="52" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+        <line num="69" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="82" count="2" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="86" count="199" type="cond" truecount="4" falsecount="2"/>
+      </file>
+    </package>
+    <package name="src.util">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="provideSingleton.ts" path="C:\Users\user\source\aws-users-api\src\util\provideSingleton.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+      </file>
+      <file name="userHandler.ts" path="C:\Users\user\source\aws-users-api\src\util\userHandler.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="test.helpers">
+      <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="app.ts" path="C:\Users\user\source\aws-users-api\test\helpers\app.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="auth.ts" path="C:\Users\user\source\aws-users-api\test\helpers\auth.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+      </file>
+      <file name="createArticle.ts" path="C:\Users\user\source\aws-users-api\test\helpers\createArticle.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="2" type="cond" truecount="0" falsecount="1"/>
+      </file>
+    </package>
+  </project>
+</coverage>

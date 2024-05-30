@@ -24,7 +24,7 @@ export class AuthError extends Error {
 export const expressAuthentication = (
   request: express.Request,
   securityName: string,
-  scopes?: string[],
+  scopes?: string[]
 ): Promise<Claims> => {
   if (securityName === securities.USER_AUTH) {
     const token = removeBearerPrefix(request.headers["authorization"] || "");
@@ -43,7 +43,11 @@ export const expressAuthentication = (
     });
   }
 
-  return Promise.reject(new AuthError("security scheme check not implemented, check src/auth/middleware.ts"));
+  return Promise.reject(
+    new AuthError(
+      "security scheme check not implemented, check src/auth/middleware.ts"
+    )
+  );
 };
 
 const removeBearerPrefix = (value: string) => value.slice(7);

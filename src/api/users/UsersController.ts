@@ -1,17 +1,33 @@
-import { Controller, Get, Request, Route, Security } from "tsoa";
-import { AuthenticatedRequest } from "../auth/middleware";
-import { provideSingleton } from "../../util/provideSingleton";
-import { User } from "./User";
-import securities from "../auth/securities";
+import { inject } from "inversify";
+import {
+  Body,
+  Controller,
+  Get,
+  Path,
+  Route,
+  Security,
+  SuccessResponse,
+} from "tsoa";
 
-@Route("user")
+import securities from "../auth/securities";
+import { provideSingleton } from "../../util/provideSingleton";
+import { User, UserResponseBody, UsersResponseBody } from "./User";
+import { UsersRepository } from "./UsersRepository";
+import { ApiError } from "../ApiError";
+
+@Route("users")
 @provideSingleton(UsersController)
 export class UsersController extends Controller {
+  constructor(
+    @inject("UsersRepository") private usersRepository: UsersRepository
+  ) {
+    super();
+  }
+
   @Security(securities.USER_AUTH)
-  @Get("me")
-  public getUser(@Request() { user }: AuthenticatedRequest): User {
-    return {
-      uuid: user.uuid,
-    };
+  @Get()
+  public async getUser(): Promise<UsersResponseBody> {
+    const users = await this.usersRepository.fetchAll();
+    return { users };
   }
 }

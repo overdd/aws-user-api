@@ -13,7 +13,9 @@ export class AuthController extends Controller {
   }
 
   @Post()
-  public async authenticate(@Body() requestBody: AuthRequest): Promise<AuthToken> {
+  public async authenticate(
+    @Body() requestBody: AuthRequest
+  ): Promise<AuthToken> {
     return this.authService.authenticate(requestBody);
   }
 }
