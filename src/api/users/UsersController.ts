@@ -13,7 +13,7 @@ import securities from "../auth/securities";
 import { provideSingleton } from "../../util/provideSingleton";
 import { User, UserResponseBody, UsersResponseBody } from "./User";
 import { UsersRepository } from "./UsersRepository";
-import { ApiError } from "../ApiError";
+import { ApiError } from "../errors/ApiError";
 
 @Route("users")
 @provideSingleton(UsersController)

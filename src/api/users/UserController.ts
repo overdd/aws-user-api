@@ -21,8 +21,9 @@ import {
   UserUpdateRequestBody,
 } from "./User";
 import { UsersRepository } from "./UsersRepository";
-import { ApiError } from "../ApiError";
+import { ApiError } from "../errors/ApiError";
 import NodeCache from "node-cache";
+import { UserNotFoundError } from "../errors/UserNotFoundError";
 const cashTTL = process.env.CASH_TTL ?? "60 * 60";
 
 @Route("user")
@@ -47,10 +48,7 @@ export class UserController extends Controller {
       const user = (await this.usersRepository.fetchById(id)) as User;
       this.userCache.set(id, user);
       if (!user) {
-        throw new ApiError({
-          statusCode: 404,
-          type: "USER_NOT_FOUND",
-        });
+        throw new UserNotFoundError();
       }
       return { user };
     }
@@ -75,10 +73,7 @@ export class UserController extends Controller {
   ): Promise<UserResponseBody> {
     const user = await this.usersRepository.update(reqBody.user);
     if (!user) {
-      throw new ApiError({
-        statusCode: 404,
-        type: "USER_NOT_FOUND",
-      });
+      throw new UserNotFoundError();
     }
     return { user };
   }
@@ -88,10 +83,7 @@ export class UserController extends Controller {
   public async deleteUser(@Path("id") id: string): Promise<void> {
     const user = await this.usersRepository.fetchById(id);
     if (!user) {
-      throw new ApiError({
-        statusCode: 404,
-        type: "USER_NOT_FOUND",
-      });
+      throw new UserNotFoundError();
     }
     await this.usersRepository.delete(id);
   }
