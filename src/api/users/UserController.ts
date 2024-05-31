@@ -22,10 +22,14 @@ import {
 } from "./User";
 import { UsersRepository } from "./UsersRepository";
 import { ApiError } from "../ApiError";
+import NodeCache from "node-cache";
+const cashTTL = process.env.CASH_TTL ?? "60 * 60";
 
 @Route("user")
 @provideSingleton(UserController)
 export class UserController extends Controller {
+  private userCache = new NodeCache({ stdTTL: +cashTTL });
+
   constructor(
     @inject("UsersRepository") private usersRepository: UsersRepository
   ) {
@@ -35,14 +39,21 @@ export class UserController extends Controller {
   @Security(securities.USER_AUTH)
   @Get("{id}")
   public async getUser(@Path("id") id: string): Promise<UserResponseBody> {
-    const user = (await this.usersRepository.fetchById(id)) as User;
-    if (!user) {
-      throw new ApiError({
-        statusCode: 404,
-        type: "USER_NOT_FOUND",
-      });
+    const cachedUser = this.userCache.get(id) as User;
+
+    if (cachedUser) {
+      return { user: cachedUser };
+    } else {
+      const user = (await this.usersRepository.fetchById(id)) as User;
+      this.userCache.set(id, user);
+      if (!user) {
+        throw new ApiError({
+          statusCode: 404,
+          type: "USER_NOT_FOUND",
+        });
+      }
+      return { user };
     }
-    return { user };
   }
 
   @SuccessResponse(201)
