@@ -2,24 +2,14 @@ import * as express from "express";
 import * as jwt from "jsonwebtoken";
 import config from "config";
 import securities from "./securities";
+import {
+  AuthError,
+  InvalidTokenError,
+  NoTokenProvidedError,
+} from "../errors/AuthError";
 
 export type Claims = { uuid: string };
 export type AuthenticatedRequest = express.Request & { user: Claims };
-
-export class AuthError extends Error {
-  public type = "UNAUTHORIZED";
-
-  constructor(message: string) {
-    super(message);
-  }
-
-  toJSON() {
-    return {
-      type: this.type,
-      message: this.message,
-    };
-  }
-}
 
 export const expressAuthentication = (
   request: express.Request,
@@ -31,11 +21,11 @@ export const expressAuthentication = (
 
     return new Promise((resolve, reject) => {
       if (!token || token === "") {
-        return reject(new AuthError("no token provided"));
+        return reject(new NoTokenProvidedError());
       }
       jwt.verify(token, config.get("authSecret"), function (err, decoded) {
         if (err) {
-          reject(new AuthError(err.message));
+          reject(new InvalidTokenError());
         } else {
           resolve(decoded as Claims);
         }

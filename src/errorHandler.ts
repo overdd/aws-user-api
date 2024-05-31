@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { ValidateError } from "tsoa";
 import { ApiError } from "./api/errors/ApiError";
-import { AuthError } from "./api/auth/middleware";
+import { AuthError } from "./api/errors/AuthError";
 
 export function errorHandler(
   err: unknown,
